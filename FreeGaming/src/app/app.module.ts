@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/components/header/header.component';
 import { FooterComponent } from './core/components/footer/footer.component';
 import { NavComponent } from './core/components/nav/nav.component';
+import { PageHelpComponent } from './vitrine/page-help/page-help.component';
+import { RouterModule } from '@angular/router';
+import { PageHomeComponent } from './vitrine/page-home/page-home.component';
 
 
 @NgModule({
@@ -18,6 +21,10 @@ import { NavComponent } from './core/components/nav/nav.component';
   ],
   imports: [
     BrowserModule,
+    RouterModule.forRoot([
+      {path: 'pageHelp', component: PageHelpComponent},
+      {path: 'pageHome', component: PageHomeComponent},
+    ]),
     AppRoutingModule
   ],
   providers: [],
