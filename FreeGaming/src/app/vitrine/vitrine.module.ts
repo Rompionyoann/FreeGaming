@@ -10,6 +10,9 @@ import { PageHomeComponent } from './page-home/page-home.component';
   ],
   imports: [
     CommonModule
-  ]
+  ],
+  exports: [
+    
+  ],
 })
 export class VitrineModule { }

@@ -1,0 +1,112 @@
+p {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+  
+  .container {
+    width: 100%;
+    height: 600px;
+    background-image: url("/assets/background.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .image-column img {
+    width: 80%;
+    transform: rotate(-5deg);
+  }
+  .image-column {
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .text-column {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    color: white;
+    margin-bottom: auto;
+  }
+  
+  .text-column h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .subscribe-btn {
+    background-color: #ff2c55;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .subscribe-btn:active {
+    transform: scale(0.95);
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+  }
+  
+  .debit-speed {
+    width: 100%;
+    height: 600px;
+    background-color: black;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+  }
+  .img-launch{
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  /* Media queries */
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      height: auto;
+    }
+    .image-column, .text-column {
+      flex-basis: 100%;
+    }
+    .image-column img {
+      width: 100%;
+      transform: none;
+    }
+    .subscribe-btn {
+      margin-top: 20px;
+    }
+    .debit-speed {
+      height: auto;
+      padding: 20px;
+      flex-direction: column;
+    }
+  }
+  
